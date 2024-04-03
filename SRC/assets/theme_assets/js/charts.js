@@ -582,7 +582,7 @@ chartjsBarChart(
         "Thu",
         "Fri",
     ],
-    145,
+    140,
     "Order",
     "Sale"
 );
