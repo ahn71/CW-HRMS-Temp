@@ -30998,3 +30998,17 @@ body:after {
   display: block;
 } */
 
+.hexadash-top-menu .subMenu {
+  width: 200px !important;
+}
+
+.hexadash-top-menu > ul > li .megaMenu-wrapper.megaMenu-small {
+  width: 550px;
+}
+.dropdown-custom .dropdown-wrapper{
+z-index: 100;
+}
+
+.card .card-header{
+  min-height: 43px;
+}
