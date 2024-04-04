@@ -30968,7 +30968,7 @@ body:after {
     margin-bottom: 10px;
   }
   .footer-wrapper {
-    padding: 20px 30px 18px  !important;
+    padding: 20px 30px 18px;
   }
   .order-summery .checkout {
     padding: 15px 10px;
@@ -30998,6 +30998,17 @@ body:after {
   display: block;
 } */
 
-.footer-wrapper {
-  padding: 24px 0 24px 280px !important;
+.hexadash-top-menu .subMenu {
+  width: 200px !important;
+}
+
+.hexadash-top-menu > ul > li .megaMenu-wrapper.megaMenu-small {
+  width: 550px;
+}
+.dropdown-custom .dropdown-wrapper{
+z-index: 100;
+}
+
+.card .card-header{
+  min-height: 43px;
 }
