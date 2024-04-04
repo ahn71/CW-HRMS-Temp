@@ -30968,7 +30968,7 @@ body:after {
     margin-bottom: 10px;
   }
   .footer-wrapper {
-    padding: 20px 30px 18px;
+    padding: 20px 30px 18px  !important;
   }
   .order-summery .checkout {
     padding: 15px 10px;
@@ -30998,3 +30998,6 @@ body:after {
   display: block;
 } */
 
+.footer-wrapper {
+  padding: 24px 0 24px 280px !important;
+}
