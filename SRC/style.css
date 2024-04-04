@@ -31012,3 +31012,6 @@ z-index: 100;
 .card .card-header{
   min-height: 43px;
 }
+.apexcharts-menu-icon{
+  display: none !important;
+}

@@ -291,10 +291,10 @@ radialChart('.performanceDetails', [90, 80, 70], '100%', 280);
 /* Apex Page */
 
 //basics bar
-function barChart(idName, width, height = "270") {
+function barChart(idName, width, height = "100") {
     var optionRadial = {
         series: [{
-            data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+            data: [10000, 13000, 14800, 17990, 20940, 25580, 96990, 38700, 40990, 48099,40990,79900]
         }],
         colors: ['#8231D3'],
         chart: {
@@ -325,6 +325,9 @@ function barChart(idName, width, height = "270") {
                 "Aug",
                 "Sep",
                 "Oct",
+                "Nov",
+                "Dec"
+          
             ],
         }
 
@@ -333,7 +336,7 @@ function barChart(idName, width, height = "270") {
         new ApexCharts(document.querySelector(idName), optionRadial).render();
     }
 }
-barChart('.barChart', '100%', 280);
+barChart('.barChart', '100%', 180);
 
 //group bar
 function groupBarChart(idName, width, height = "270") {
