@@ -446,7 +446,7 @@ chartjsBarChart(
         "Thu",
         "Fri",
     ],
-    98,
+    150,
     "Target",
     "Total Sales"
 );
