@@ -18859,7 +18859,7 @@ td.order-summery .total > div {
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
-  color: var(--color-light);
+  color: #111111;
   text-transform: uppercase;
   padding: 11px 15px;
 }
