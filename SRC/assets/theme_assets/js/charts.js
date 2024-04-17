@@ -190,7 +190,7 @@ function chartjsAreaChart(selector, height, labelName1, labelName2) {
                                 if (context.parsed.y !== null) {
                                     label += new Intl.NumberFormat().format(context.parsed.y);
                                 }
-                                return `<span class="data-label">${label}K</span>`;
+                                return `<span class="data-label">${label}</span>`;
                             }
                         },
                     },
@@ -243,11 +243,11 @@ function chartjsAreaChart(selector, height, labelName1, labelName2) {
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 80,
-                            min: 0,
+                            max: 100,
+                            min: 2,
                             stepSize: 20,
                             callback(value, index, values) {
-                                return `${value}K`;
+                                return `${value}`;
                             },
                         },
                     },
@@ -347,7 +347,7 @@ function chartjsBarChart(selector, dataCIn, DataCOut, labels, height, labelName1
                                 if (context.parsed.y !== null) {
                                     label += new Intl.NumberFormat().format(context.parsed.y);
                                 }
-                                return `<span class="data-label">${label}k</span>`;
+                                return `<span class="data-label">${label}</span>`;
                             }
                         },
                     },
@@ -398,11 +398,11 @@ function chartjsBarChart(selector, dataCIn, DataCOut, labels, height, labelName1
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 80,
-                            min: 0,
+                            max: 100,
+                            min: 2,
                             stepSize: 20,
                             callback(value, index, values) {
-                                return `${value}k`;
+                                return `${value}`;
                             },
                         },
                     },
@@ -571,20 +571,19 @@ chartjsBarChart(
 /* demo 3*/
 chartjsBarChart(
     "profitGrowthToday",
-    (data = [35, 55, 25, 60, 42, 80, 35]),
-    (data = [10, 30, 8, 30, 22, 38, 45]),
+    (data = [10, 55, 25, 60, 42, 80]),
+    (data = [5, 30, 8, 30, 22, 38]),
     labels = [
-        "Sat",
-        "Sun",
-        "Mon",
-        "Tue",
-        "Wed",
-        "Thu",
-        "Fri",
+        "Nov-23",
+        "Dec-23",
+        "Jan-24",
+        "Feb-24",
+        "Mar-24",
+        "Apr-24",
     ],
-    140,
-    "Order",
-    "Sale"
+    1,
+    "New Join",
+    "Relase"
 );
 
 function chartjsLineChart(selector, height, dataCur, labels, labelName, fill) {
@@ -656,7 +655,7 @@ function chartjsLineChart(selector, height, dataCur, labels, labelName, fill) {
                                 if (context.parsed.y !== null) {
                                     label += new Intl.NumberFormat().format(context.parsed.y);
                                 }
-                                return `<span class="data-label">${label}k</span>`;
+                                return `<span class="data-label">${label}</span>`;
                             }
                         },
                     },
@@ -707,11 +706,11 @@ function chartjsLineChart(selector, height, dataCur, labels, labelName, fill) {
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 80,
-                            min: 0,
-                            stepSize: 20,
+                            max: 100,
+                            min: 2,
+                            stepSize: 1,
                             callback(value, index, values) {
-                                return `${value}k`;
+                                return `${value}`;
                             },
                         },
                     },
@@ -1384,7 +1383,7 @@ function chartJsBarChartSocial(selector, height, bgColor, hBgColor, label) {
                                 if (context.parsed.y !== null) {
                                     label += new Intl.NumberFormat().format(context.parsed.y);
                                 }
-                                return `<span class="data-label">${label}k</span>`;
+                                return `<span class="data-label">${label}</span>`;
                             }
                         },
                     },
@@ -1436,11 +1435,11 @@ function chartJsBarChartSocial(selector, height, bgColor, hBgColor, label) {
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 80,
-                            min: 0,
+                            max: 100,
+                            min: 2,
                             stepSize: 20,
                             callback(value, index, values) {
-                                return `${value}k`;
+                                return `${value}`;
                             },
                         },
                     },
@@ -1548,7 +1547,7 @@ function chartjsLineChartProfile(selector, bcolor = "#FA8B0C", height = "95", da
                                 if (context.parsed.y !== null) {
                                     label += new Intl.NumberFormat().format(context.parsed.y);
                                 }
-                                return `<span class="data-label">${label}k</span>`;
+                                return `<span class="data-label">${label}</span>`;
                             }
                         },
                     },
@@ -1595,11 +1594,11 @@ function chartjsLineChartProfile(selector, bcolor = "#FA8B0C", height = "95", da
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 80,
-                            min: 0,
+                            max: 100,
+                            min: 2,
                             stepSize: 20,
                             callback(value, index, values) {
-                                return `${value}k`;
+                                return `${value}`;
                             },
                         },
                     },
@@ -1824,7 +1823,7 @@ function chartjsLineChartTwo(selector, height, data) {
                                 if (context.parsed.y !== null) {
                                     label += new Intl.NumberFormat().format(context.parsed.y);
                                 }
-                                return `<span class="data-label">${label}k</span>`;
+                                return `<span class="data-label">${label}</span>`;
                             }
                         },
                     },
@@ -2004,7 +2003,7 @@ function chartjsLineChartAccount(selector, bcolor = "#FA8B0C") {
                                 if (context.parsed.y !== null) {
                                     label += new Intl.NumberFormat().format(context.parsed.y);
                                 }
-                                return `<span class="data-label">${label}k</span>`;
+                                return `<span class="data-label">${label}</span>`;
                             }
                         },
                     },
@@ -2052,11 +2051,11 @@ function chartjsLineChartAccount(selector, bcolor = "#FA8B0C") {
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 80,
-                            min: 0,
+                            max: 100,
+                            min: 3,
                             stepSize: 20,
                             callback(value, index, values) {
-                                return `${value}K`;
+                                return `${value}`;
                             },
                         },
                     }
@@ -2142,7 +2141,7 @@ function chartjsLineChartOne(
                                     if (context.parsed.y !== null) {
                                         label += new Intl.NumberFormat().format(context.parsed.y);
                                     }
-                                    return `<span class="data-label">${label}k</span>`;
+                                    return `<span class="data-label">${label}</span>`;
                                 }
                             },
                         },
@@ -2406,7 +2405,7 @@ function chartjsBarChartInEx(selector, data1, data2, data3, data4, labels, label
                                 if (context.parsed.y !== null) {
                                     label += new Intl.NumberFormat().format(context.parsed.y);
                                 }
-                                return `<span class="data-label">${label}k</span>`;
+                                return `<span class="data-label">${label}</span>`;
                             }
                         },
                     },
@@ -2439,11 +2438,11 @@ function chartjsBarChartInEx(selector, data1, data2, data3, data4, labels, label
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 80,
-                            min: 0,
+                            max: 100,
+                            min: 4,
                             stepSize: 20,
                             callback(value, index, values) {
-                                return `${value}K`;
+                                return `${value}`;
                             },
                         },
                     },
@@ -2594,7 +2593,7 @@ function chartjsLineChartForcast(
                                     if (context.parsed.y !== null) {
                                         label += new Intl.NumberFormat().format(context.parsed.y);
                                     }
-                                    return `<span class="data-label">${label}k</span>`;
+                                    return `<span class="data-label">${label}</span>`;
                                 }
                             },
                         },
@@ -2727,7 +2726,7 @@ function chartjsLineChartSmall(
                                 if (context.parsed.y !== null) {
                                     label += new Intl.NumberFormat().format(context.parsed.y);
                                 }
-                                return `<span class="data-label">${label}k</span>`;
+                                return `<span class="data-label">${label}</span>`;
                             }
                         },
                     },
