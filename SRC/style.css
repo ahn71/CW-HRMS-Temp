@@ -18856,12 +18856,19 @@ td.order-summery .total > div {
   padding-top: 15px;
 }
 .selling-table-wrap table thead tr th {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: bold;
   line-height: 18px;
   color: #111111;
   text-transform: uppercase;
-  padding: 11px 15px;
+  padding: 11px 0px;
+  background-color: #ffffff;
+}
+.selling-table-wrap table tbody td {
+  white-space: nowrap;
+  padding: 10px 15px 10px 0;
+  color: var(--color-dark);
+  font-size: 14px;
 }
 .selling-table-wrap table tr th:first-child {
   border-radius: 6px 0 0 6px;
@@ -31014,4 +31021,13 @@ z-index: 100;
 }
 .apexcharts-menu-icon{
   display: none !important;
+}
+.ap-po-details__titlebar p{
+  font-size: 14px !important;
+}
+.ap-po-details--luodcy .ap-po-details__icon-area.color-danger::before {
+  background: rgba(var(--color-danger-rgba), 0.1);
+}
+.ap-po-details--luodcy .ap-po-details__icon-area.color-warning::before {
+  background: rgba(var(--color-warning-rgba), 0.1);
 }
