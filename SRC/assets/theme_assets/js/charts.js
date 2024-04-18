@@ -243,8 +243,8 @@ function chartjsAreaChart(selector, height, labelName1, labelName2) {
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 100,
-                            min: 2,
+                            max: 80,
+                            min: 0,
                             stepSize: 20,
                             callback(value, index, values) {
                                 return `${value}`;
@@ -398,8 +398,8 @@ function chartjsBarChart(selector, dataCIn, DataCOut, labels, height, labelName1
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 100,
-                            min: 2,
+                            max: 80,
+                            min: 0,
                             stepSize: 20,
                             callback(value, index, values) {
                                 return `${value}`;
@@ -441,14 +441,10 @@ chartjsBarChart(
         "Sat",
         "Sun",
         "Mon",
-        "Tue",
-        "Wed",
-        "Thu",
-        "Fri",
     ],
     350,
-    "Target",
-    "Total Sales"
+    "Presnt",
+    "Absent",
 );
 
 
@@ -571,8 +567,8 @@ chartjsBarChart(
 /* demo 3*/
 chartjsBarChart(
     "profitGrowthToday",
-    (data = [10, 55, 25, 60, 42, 80]),
-    (data = [5, 30, 8, 30, 22, 38]),
+    (data = [35, 55, 25, 60, 42, 80]),
+    (data = [10, 30, 8, 30, 22, 38]),
     labels = [
         "Nov-23",
         "Dec-23",
@@ -581,9 +577,9 @@ chartjsBarChart(
         "Mar-24",
         "Apr-24",
     ],
-    1,
+    140,
     "New Join",
-    "Relase"
+    "Relased"
 );
 
 function chartjsLineChart(selector, height, dataCur, labels, labelName, fill) {
@@ -706,9 +702,9 @@ function chartjsLineChart(selector, height, dataCur, labels, labelName, fill) {
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 100,
-                            min: 2,
-                            stepSize: 1,
+                            max: 80,
+                            min: 0,
+                            stepSize: 20,
                             callback(value, index, values) {
                                 return `${value}`;
                             },
@@ -1435,8 +1431,8 @@ function chartJsBarChartSocial(selector, height, bgColor, hBgColor, label) {
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 100,
-                            min: 2,
+                            max: 80,
+                            min: 0,
                             stepSize: 20,
                             callback(value, index, values) {
                                 return `${value}`;
@@ -1594,8 +1590,8 @@ function chartjsLineChartProfile(selector, bcolor = "#FA8B0C", height = "95", da
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 100,
-                            min: 2,
+                            max: 80,
+                            min: 0,
                             stepSize: 20,
                             callback(value, index, values) {
                                 return `${value}`;
@@ -2051,8 +2047,8 @@ function chartjsLineChartAccount(selector, bcolor = "#FA8B0C") {
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 100,
-                            min: 3,
+                            max: 80,
+                            min: 0,
                             stepSize: 20,
                             callback(value, index, values) {
                                 return `${value}`;
@@ -2438,8 +2434,8 @@ function chartjsBarChartInEx(selector, data1, data2, data3, data4, labels, label
                             },
                             color: '#747474',
                             padding: 15,
-                            max: 100,
-                            min: 4,
+                            max: 80,
+                            min: 0,
                             stepSize: 20,
                             callback(value, index, values) {
                                 return `${value}`;
