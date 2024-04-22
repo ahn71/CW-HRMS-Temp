@@ -434,8 +434,9 @@ function chartjsBarChart(selector, dataCIn, DataCOut, labels, height, labelName1
 }
 
 chartjsBarChart(
+    
     "salesGrowthToday",
-    (data = [35, 55, 25,11,32,11,12]),
+    (data = [255, 55, 25,11,32,11,12]),
     (data = [10, 30, 8,11,21,32,11]),
     labels = [
         "Sat",
