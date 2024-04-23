@@ -174,7 +174,7 @@ function DonutChart(idName, series, width, height, label, colors, size) {
                             fontWeight: "bold",
                             offsetY: 10,
                             formatter: function (val) {
-                                return +val + "K"
+                                return +val + ""
                             }
                         },
                         total: {
@@ -206,12 +206,12 @@ function DonutChart(idName, series, width, height, label, colors, size) {
         new ApexCharts(document.querySelector(idName), optionsPie).render();
     }
 }
-DonutChart('.StapWorkerRatio', [30, 40], '100%', 180, ['Sales', 'Products'], [ '#00AAFF', '#FA8B0C'], "60%");
+DonutChart('.StapWorkerRatio', [30, 40], '100%', 180, ['Worker', 'Staff'], [ '#00AAFF', '#FA8B0C'], "60%");
 
 
 
 
-DonutChart('.salesDonutToday', [30, 40], '100%', 180, ['Sales', 'Products'], [ '#00AAFF', '#FA8B0C'], "60%");
+DonutChart('.salesDonutToday', [30, 40], '100%', 180, ['Female', 'Male'], [ '#00AAFF', '#FA8B0C'], "60%");
 DonutChart('.salesDonutWeek', [30, 40, 30], '100%', 150, ['Revenue', 'Sales', 'Products'], ['#8231D3', '#00AAFF', '#FA8B0C'], "60%");
 DonutChart('.salesDonutMonth', [40, 30, 30], '100%', 150, ['Revenue', 'Sales', 'Products'], ['#8231D3', '#00AAFF', '#FA8B0C'], "60%");
 DonutChart('.performance_overview', [30, 40], '100%', 150, ['Target', 'Completed'], ['#00AAFF', '#FA8B0C'], "80%");
