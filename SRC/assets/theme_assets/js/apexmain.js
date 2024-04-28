@@ -211,7 +211,7 @@ DonutChart('.StapWorkerRatio', [30, 40], '100%', 180, ['Worker', 'Staff'], [ '#0
 
 
 
-DonutChart('.salesDonutToday', [30, 40], '100%', 180, ['Female', 'Male'], [ '#00AAFF', '#FA8B0C'], "60%");
+DonutChart('.salesDonutToday', [30, 40], '100%', 180, ['Female', 'Male'], [ '#01b81a', '#8231d3'], "60%");
 DonutChart('.salesDonutWeek', [30, 40, 30], '100%', 150, ['Revenue', 'Sales', 'Products'], ['#8231D3', '#00AAFF', '#FA8B0C'], "60%");
 DonutChart('.salesDonutMonth', [40, 30, 30], '100%', 150, ['Revenue', 'Sales', 'Products'], ['#8231D3', '#00AAFF', '#FA8B0C'], "60%");
 DonutChart('.performance_overview', [30, 40], '100%', 150, ['Target', 'Completed'], ['#00AAFF', '#FA8B0C'], "80%");

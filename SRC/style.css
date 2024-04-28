@@ -31076,6 +31076,28 @@ z-index: 100;
 .ap-po-details--luodcy .ap-po-details__titlebar .ap-po-details-time {
   margin-top: 10px !important;
 }
-.label-dot.dot-primary {
-  background-color: #fa8b0c !important;
+
+.navbar {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    right: 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+.bordered:nth-child(even){
+  border:1px solid #e9e9e9;
+  border-radius: 5px;
+  margin: 2px !important;
+  background-color: rgba(var(--color-linkedin-rgba), 0.1);
+}
+.bordered:nth-child(odd){
+  border:1px solid #e9e9e9;
+  border-radius: 5px;
+  margin: 2px !important;
+  background-color: rgba(var(--color-instagram-rgba), 0.1);
+}
+.table-height{
+  height: 200px;
+  overflow-y: scroll;
 }
