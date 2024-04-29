@@ -998,7 +998,7 @@
                                  aria-labelledby="t_selling-today-tab">
                                  <div class="selling-table-wrap">
                                     <div class="table-responsive table-height">
-                                       <table class="table table-border">
+                                       <table class="attendance-table table table-border">
                                           <thead>
                                              <tr>
                                                 <th>Department </th>
@@ -1090,49 +1090,136 @@
                   <!---Today Costing Over time End ---->
 
                   <div class="row">
-                     <div class="col-lg-6 col-md-6 col-sm-12 mb-25 d-block">
-                        <div class="card border-0 cashflowChart2">
-                           <div class="card-header">
-                              <h6>Monthly New Join & Release</h6>
-                           </div>
-                           <!-- <div class="card-header border-0 px-25 pt-25 pb-15">
-                           <div class="chartLine-po-details__overview-content w-100">
-                              <div class=" chartLine-po-details__content d-flex flex-wrap justify-content-between">
-                                 <div class="chartLine-po-details__titlebar">
-                                    <h1>Monthly New Join & Release</h1>
-                                 </div>
-                              </div>
-                           </div>
 
-                        </div> -->
-                           <!-- ends: .card-header -->
-                           <div style="height: 271px;" class="card-body pt-0 ">
-                              <div class="cashflow-chart">
-                                 <ul class="legend-static mb-30 mt-1 d-flex justify-content-center">
-                                    <li class="custom-label">
-                                       <span class="bg-primary"></span>New Join
-                                    </li>
-                                    <li class="custom-label">
-                                       <span class="bg-secondary"></span>Relase
-                                    </li>
-                                 </ul>
-                                 <div class="parentContainer">
-
-
-                                    <div>
-                                       <canvas id="profitGrowthToday"></canvas>
+                     <div class="col-lg-6">
+                        <div class="ap-po-details ap-po-details--3x radius-xl d-flex">
+                           <div class="row">
+                              <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
+                                 <div class="d-flex">
+                                    <div class="revenue-chart-box__Icon me-10 order-bg-opacity-primary color-primary">
+                                       <i class="uil uil-user"></i>
                                     </div>
-
-
+                                    <div class="d-flex align-items-start flex-wrap">
+                                       <div class="me-25">
+                                          <h2>530</h2>
+                                          <p class="mt-1 mb-0">Released
+                                          </p>
+                                       </div>
+   
+                                       <!-- <div class="ap-po-details bg-none">
+                                          <span class="color-success"><i class="las la-arrow-up"></i>
+                                             <strong>25.36%</strong></span>
+                                       </div> -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
+                                 <div class="d-flex">
+                                    <div class="revenue-chart-box__Icon me-10 order-bg-opacity-secondary color-secondary">
+   
+                                       <i class="uil uil-user-minus"></i>
+                                    </div>
+                                    <div class="d-flex align-items-start flex-wrap">
+                                       <div class="me-25">
+                                          <h2>10</h2>
+                                          <p class="mt-1 mb-0">Recruitment</p>
+                                       </div>
+   
+                                       <!-- <div class="ap-po-details bg-none">
+                                          <span class="color-success"><i class="las la-arrow-up"></i>
+                                             <strong>25.36%</strong></span>
+                                       </div> -->
+                                    </div>
+                                 </div>
+                              </div>
+   
+                              <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
+                                 <div class="d-flex">
+                                    <div class="revenue-chart-box__Icon me-10 order-bg-opacity-success color-success">
+   
+                                       <i class="uil uil-users-alt"></i>
+                                    </div>
+                                    <div class="d-flex align-items-start flex-wrap">
+                                       <div class="me-25">
+                                          <h2>540</h2>
+                                          <p title="Current employee
+                                          " class="mt-1 mb-0">Cur. Emp
+                                          </p>
+                                       </div>
+                                       <!--    
+                                       <div class="ap-po-details bg-none">
+                                          <span class="color-success"><i class="las la-arrow-up"></i>
+                                             <strong>25.36%</strong></span>
+                                       </div> -->
+                                    </div>
+                                 </div>
+                              </div>
+   
+                              <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
+                                 <div class="d-flex">
+                                    <div class="revenue-chart-box__Icon me-10 order-bg-opacity-warning color-warning">
+   
+                                       <i class="uil uil-user-md"></i>
+                                    </div>
+                                    <div class="d-flex align-items-start flex-wrap">
+                                       <div class="me-25">
+                                          <h2>250</h2>
+                                          <p class="mt-1 mb-0">Male</p>
+                                       </div>
+   
+                                       <!-- <div class="ap-po-details bg-none">
+                                          <span class="color-danger"><i class="las la-arrow-down"></i>
+                                             <strong>25.36%</strong></span>
+                                       </div> -->
+                                    </div>
+                                 </div>
+                              </div>
+   
+                              <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
+                                 <div class="d-flex">
+                                    <div class="revenue-chart-box__Icon me-10 order-bg-opacity-warning color-warning">
+   
+                                       <i class="uil uil-user-nurse"></i>
+                                    </div>
+                                    <div class="d-flex align-items-start flex-wrap">
+                                       <div class="me-25">
+                                          <h2>280</h2>
+                                          <p class="mt-1 mb-0">Female</p>
+                                       </div>
+   
+                                       <!-- <div class="ap-po-details bg-none">
+                                       <span class="color-danger"><i class="las la-arrow-down"></i>
+                                          <strong>25.36%</strong></span>
+                                    </div> -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
+                                 <div class="d-flex">
+                                    <div class="revenue-chart-box__Icon me-10 order-bg-opacity-warning color-warning">
+   
+                                       <i class="uil uil-clock-seven"></i>
+                                    </div>
+                                    <div class="d-flex align-items-start flex-wrap">
+                                       <div class="me-25">
+                                          <h2>497</h2>
+                                          <p class="mt-1 mb-0">OT</p>
+                                       </div>
+   
+                                       <!-- <div class="ap-po-details bg-none">
+                                       <span class="color-danger"><i class="las la-arrow-down"></i>
+                                          <strong>25.36%</strong></span>
+                                    </div> -->
+                                    </div>
                                  </div>
                               </div>
                            </div>
-                           <!-- ends: .card-body -->
                         </div>
-
                      </div>
 
-                     <div class="col-lg-6 d-block ">
+                     
+
+                     <div class="col-lg-6">
                         <div class="row">
                            <div class="col-lg-6 col-md-6 col-sm-12 mb-25 d-block ">
                               <div class="device-chart-box">
@@ -1162,7 +1249,7 @@
                                                 </div>
                                                 <div class="session-single">
                                                    <div class="chart-label">
-                                                      <span class="label-dot dot-info"></span>
+                                                      <span class="label-dot dot-success"></span>
                                                       Female
                                                    </div>
                                                 </div>
@@ -1232,126 +1319,43 @@
                   <!-----Start -->
                   <div class="col-lg-8 col-md-12 col-sm-12 mb-25">
                      <!-- Card 1  -->
-                     <div class="ap-po-details ap-po-details--3 radius-xl d-flex">
-                        <div class="row">
-                           <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
-                              <div class="d-flex">
-                                 <div class="revenue-chart-box__Icon me-20 order-bg-opacity-primary color-primary">
-                                    <i class="uil uil-user"></i>
-                                 </div>
-                                 <div class="d-flex align-items-start flex-wrap">
-                                    <div class="me-25">
-                                       <h2>530</h2>
-                                       <p class="mt-1 mb-0">Regular Emp
-                                       </p>
-                                    </div>
-
-                                    <!-- <div class="ap-po-details bg-none">
-                                       <span class="color-success"><i class="las la-arrow-up"></i>
-                                          <strong>25.36%</strong></span>
-                                    </div> -->
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
-                              <div class="d-flex">
-                                 <div class="revenue-chart-box__Icon me-20 order-bg-opacity-secondary color-secondary">
-
-                                    <i class="uil uil-user-minus"></i>
-                                 </div>
-                                 <div class="d-flex align-items-start flex-wrap">
-                                    <div class="me-25">
-                                       <h2>10</h2>
-                                       <p class="mt-1 mb-0">Released</p>
-                                    </div>
-
-                                    <!-- <div class="ap-po-details bg-none">
-                                       <span class="color-success"><i class="las la-arrow-up"></i>
-                                          <strong>25.36%</strong></span>
-                                    </div> -->
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
-                              <div class="d-flex">
-                                 <div class="revenue-chart-box__Icon me-20 order-bg-opacity-success color-success">
-
-                                    <i class="uil uil-users-alt"></i>
-                                 </div>
-                                 <div class="d-flex align-items-start flex-wrap">
-                                    <div class="me-25">
-                                       <h2>540</h2>
-                                       <p class="mt-1 mb-0">Total</p>
-                                    </div>
-                                    <!--    
-                                    <div class="ap-po-details bg-none">
-                                       <span class="color-success"><i class="las la-arrow-up"></i>
-                                          <strong>25.36%</strong></span>
-                                    </div> -->
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
-                              <div class="d-flex">
-                                 <div class="revenue-chart-box__Icon me-20 order-bg-opacity-warning color-warning">
-
-                                    <i class="uil uil-user-md"></i>
-                                 </div>
-                                 <div class="d-flex align-items-start flex-wrap">
-                                    <div class="me-25">
-                                       <h2>250</h2>
-                                       <p class="mt-1 mb-0">Male</p>
-                                    </div>
-
-                                    <!-- <div class="ap-po-details bg-none">
-                                       <span class="color-danger"><i class="las la-arrow-down"></i>
-                                          <strong>25.36%</strong></span>
-                                    </div> -->
-                                 </div>
-                              </div>
-                           </div>
-
-                           <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
-                              <div class="d-flex">
-                                 <div class="revenue-chart-box__Icon me-20 order-bg-opacity-warning color-warning">
-
-                                    <i class="uil uil-user-nurse"></i>
-                                 </div>
-                                 <div class="d-flex align-items-start flex-wrap">
-                                    <div class="me-25">
-                                       <h2>280</h2>
-                                       <p class="mt-1 mb-0">Female</p>
-                                    </div>
-
-                                    <!-- <div class="ap-po-details bg-none">
-                                    <span class="color-danger"><i class="las la-arrow-down"></i>
-                                       <strong>25.36%</strong></span>
-                                 </div> -->
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-4 overview-content overview-content3 bg-none mb-3">
-                              <div class="d-flex">
-                                 <div class="revenue-chart-box__Icon me-20 order-bg-opacity-warning color-warning">
-
-                                    <i class="uil uil-clock-seven"></i>
-                                 </div>
-                                 <div class="d-flex align-items-start flex-wrap">
-                                    <div class="me-25">
-                                       <h2>497</h2>
-                                       <p class="mt-1 mb-0">Over Time</p>
-                                    </div>
-
-                                    <!-- <div class="ap-po-details bg-none">
-                                    <span class="color-danger"><i class="las la-arrow-down"></i>
-                                       <strong>25.36%</strong></span>
-                                 </div> -->
-                                 </div>
+                     <div class="card border-0 cashflowChart2">
+                        <div class="card-header">
+                           <h6>Monthly New Join & Release</h6>
+                        </div>
+                        <!-- <div class="card-header border-0 px-25 pt-25 pb-15">
+                        <div class="chartLine-po-details__overview-content w-100">
+                           <div class=" chartLine-po-details__content d-flex flex-wrap justify-content-between">
+                              <div class="chartLine-po-details__titlebar">
+                                 <h1>Monthly New Join & Release</h1>
                               </div>
                            </div>
                         </div>
+
+                     </div> -->
+                        <!-- ends: .card-header -->
+                        <div style="height: 325px;" class="card-body pt-0 ">
+                           <div class="cashflow-chart">
+                              <ul class="legend-static mb-30 mt-1 d-flex justify-content-center">
+                                 <li class="custom-label">
+                                    <span class="bg-primary"></span>New Join
+                                 </li>
+                                 <li class="custom-label">
+                                    <span class="bg-secondary"></span>Relase
+                                 </li>
+                              </ul>
+                              <div class="parentContainer">
+
+
+                                 <div>
+                                    <canvas id="profitGrowthToday"></canvas>
+                                 </div>
+
+
+                              </div>
+                           </div>
+                        </div>
+                        <!-- ends: .card-body -->
                      </div>
                      <!-- Card 1 End  -->
                      <!-- Salary Comparison chat Start -->
@@ -1497,7 +1501,7 @@
                                  aria-labelledby="st_matrics-today-tab">
                                  <div class="row">
                                     <div class="col-lg-6 table-responsive">
-                                       <table class=" table table-bordered">
+                                       <table class="table table-bordered">
                                           <thead>
                                              <tr class="text-center">
 
