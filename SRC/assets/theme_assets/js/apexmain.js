@@ -294,7 +294,7 @@ radialChart('.performanceDetails', [90, 80, 70], '100%', 280);
 function barChart(idName, width, height = "100") {
     var optionRadial = {
         series: [{
-            data: [10000, 13000, 14800, 17990, 20940, 25580, 96990, 38700, 40990, 48099,40990,79900]
+            data: [5000, 13000, 14800, 17990, 20940, 25580, 96990, 38700, 40990, 48099,40990,79900]
         }],
         colors: ['#8231D3'],
         chart: {

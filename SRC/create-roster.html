@@ -838,20 +838,20 @@
                      <div class="btn-wrapper">
                         <div class="dm-button-list d-flex flex-wrap align-items-end">
 
-                           <button id="addnew" onclick="cardbox();" class="btn btn-secondary btn-default btn-squared">Add New
+                           <button id="addnew" onclick="cardbox();" class="d-none btn btn-secondary btn-default btn-squared">Add New
                            </button>
                         </div>
                      </div>
                   </div>
 
-                  <div style="display: none;" id="cardbox" class="card-body pb-md-30">
+                  <div id="cardbox" class="card-body pb-md-30">
                      <div class="Vertical-form">
                         <form action="#">
                            <div class="row">
                               <div class="col-lg-3">
                                  <div class="form-group">
                                     <label for="formGroupExampleInput"
-                                       class="color-dark fs-14 fw-500 align-center mb-10">Name <span
+                                       class="color-dark fs-14 fw-500 align-center mb-10">Company <span
                                           class="text-danger">*</span></label>
                                     <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"
                                        id="formGroupExampleInput" placeholder="Duran Clayton">
@@ -860,7 +860,7 @@
                               <div class="col-lg-3">
                                  <div class="form-group">
                                     <label for="formGroupExampleInput"
-                                       class="color-dark fs-14 fw-500 align-center mb-10">Name <span
+                                       class="color-dark fs-14 fw-500 align-center mb-10">Department <span
                                           class="text-danger">*</span></label>
                                     <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"
                                        id="formGroupExampleInput" placeholder="Duran Clayton">
@@ -869,7 +869,7 @@
                               <div class="col-lg-3">
                                  <div class="form-group">
                                     <label for="formGroupExampleInput"
-                                       class="color-dark fs-14 fw-500 align-center mb-10">Name <span
+                                       class="color-dark fs-14 fw-500 align-center mb-10">Group <span
                                           class="text-danger">*</span></label>
                                     <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"
                                        id="formGroupExampleInput" placeholder="Duran Clayton">
@@ -878,7 +878,7 @@
                               <div class="col-lg-3">
                                  <div class="form-group">
                                     <label for="formGroupExampleInput"
-                                       class="color-dark fs-14 fw-500 align-center mb-10">Name <span
+                                       class="color-dark fs-14 fw-500 align-center mb-10">From Date <span
                                           class="text-danger">*</span></label>
                                     <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"
                                        id="formGroupExampleInput" placeholder="Duran Clayton">
@@ -886,11 +886,39 @@
                               </div>
 
                               <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <label for="formGroupExampleInput"
+                                       class="color-dark fs-14 fw-500 align-center mb-10">To Date <span
+                                          class="text-danger">*</span></label>
+                                    <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"
+                                       id="formGroupExampleInput" placeholder="Duran Clayton">
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-3">
+                                 <div class="form-group">
+                                    <label for="formGroupExampleInput"
+                                       class="color-dark fs-14 fw-500 align-center mb-10">New Shift <span
+                                          class="text-danger">*</span></label>
+                                    <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"
+                                       id="formGroupExampleInput" placeholder="Duran Clayton">
+                                 </div>
+                              </div>
+
+                              <div class="col-lg-1 px-2">
                                  <label style="opacity: 0;" for="formGroupExampleInput"
                                     class="color-dark fs-14 fw-500 align-center mb-10">Name <span
                                        class="text-danger"></span></label>
                                  <button type="button"
-                                    class="btn btn-primary btn-default btn-squared px-30">Save</button>
+                                    class="btn btn-primary btn-default btn-squared px-30">Search</button>
+                              </div>
+
+                              <div class="col-lg-1 me-2 px-2">
+                                 <label style="opacity: 0;" for="formGroupExampleInput"
+                                    class="color-dark fs-14 fw-500 align-center mb-10">Name <span
+                                       class="text-danger"></span></label>
+                                 <button type="button"
+                                    class="btn btn-primary btn-default btn-squared px-30">Submit</button>
                               </div>
                            </div>
                         </form>
@@ -975,22 +1003,33 @@
                                        <span class="userDatatable-title">ID</span>
                                     </th>
                                     <th>
-                                       <span class="userDatatable-title">User</span>
+                                       <span class="userDatatable-title">Name</span>
                                     </th>
                                     <th>
-                                       <span class="userDatatable-title">Country</span>
+                                       <span class="userDatatable-title"><div class="checkbox-theme-default custom-checkbox ">
+                                          <input class="checkbox" type="checkbox" id="check-un3" checked="">
+                                          <label for="check-un3">
+                                             <span class="checkbox-text">
+                                                Select All
+
+                                             </span>
+                                          </label>
+                                       </div></span>
                                     </th>
                                     <th>
-                                       <span class="userDatatable-title">Company</span>
+                                       <span class="userDatatable-title">Card No</span>
                                     </th>
                                     <th>
-                                       <span class="userDatatable-title">Position</span>
+                                       <span class="userDatatable-title">Duty Place</span>
                                     </th>
                                     <th>
-                                       <span class="userDatatable-title">Join Date</span>
+                                       <span class="userDatatable-title">Comments</span>
                                     </th>
                                     <th>
-                                       <span class="userDatatable-title">Status</span>
+                                       <span class="userDatatable-title">Designation</span>
+                                    </th>
+                                    <th>
+                                       <span class="userDatatable-title">Roster</span>
                                     </th>
                                     <th class="actions">
                                        <span class="userDatatable-title">Actions</span>
@@ -1000,34 +1039,55 @@
                               <tbody>
 
                                  <tr>
-                                    <td>#01</td>
+                                    <td>01</td>
                                     <td>
                                        <div class="d-flex">
                                           <div class="userDatatable-inline-title">
                                              <a href="#" class="text-dark fw-500">
-                                                <h6>Kellie Marquot</h6>
+                                                <h6>Nipun Mitra</h6>
                                              </a>
                                           </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div class="userDatatable-content--subject">
-                                          United Street
+                                          <div class="checkbox-theme-default custom-checkbox ">
+                                             <input class="checkbox" type="checkbox" id="check-un4" checked="">
+                                             <label for="check-un4">
+                                                <span class="checkbox-text">
+                                                   Checked
+
+                                                </span>
+                                             </label>
+                                          </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div class="userDatatable-content--subject">
-                                          Business Development
+                                          42230100466
+                                       </div>
+                                    </td>
+                                    <td>
+                                       <div class="userDatatable-content--subject">
+                                          <div class="dm-select ">
+
+                                             <select name="select-search" class="select-search form-control ">
+                                                <option value="01">Day Shift</option>
+                                                <option value="02">Night Shift</option>
+                                                <option value="03">Both Shift</option>
+                                             </select>
+         
+                                          </div>
                                        </div>
                                     </td>
                                     <td>
                                        <div class="userDatatable-content--priority">
-                                          Web Developer
+                                          Box checking
                                        </div>
                                     </td>
                                     <td>
                                        <div class="userDatatable-content--priority">
-                                          January 20, 2020
+                                          Manager
                                        </div>
                                     </td>
                                     <td>
@@ -1058,535 +1118,7 @@
                                  </tr>
 
 
-                                 <tr>
-                                    <td>#02</td>
-                                    <td>
-                                       <div class="d-flex">
-                                          <div class="userDatatable-inline-title">
-                                             <a href="#" class="text-dark fw-500">
-                                                <h6>Robert Clinton</h6>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Japan
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Vehicle Master
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          Senior Manager
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          January 20, 2020
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content d-inline-block">
-                                          <span
-                                             class="bg-opacity-warning  color-warning userDatatable-content-status active">deactivated</span>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                          <li>
-                                             <a href="#" class="view">
-                                                <i class="uil uil-setting"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="edit">
-                                                <i class="uil uil-edit"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="remove">
-                                                <i class="uil uil-trash-alt"></i>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </td>
-                                 </tr>
 
-
-                                 <tr>
-                                    <td>#03</td>
-                                    <td>
-                                       <div class="d-flex">
-                                          <div class="userDatatable-inline-title">
-                                             <a href="#" class="text-dark fw-500">
-                                                <h6>Chris Joe</h6>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          South Africa
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Business Development
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          Content writer
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          July 30, 2020
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content d-inline-block">
-                                          <span
-                                             class="bg-opacity-danger  color-danger userDatatable-content-status active">blocked</span>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                          <li>
-                                             <a href="#" class="view">
-                                                <i class="uil uil-setting"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="edit">
-                                                <i class="uil uil-edit"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="remove">
-                                                <i class="uil uil-trash-alt"></i>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </td>
-                                 </tr>
-
-
-                                 <tr>
-                                    <td>#04</td>
-                                    <td>
-                                       <div class="d-flex">
-                                          <div class="userDatatable-inline-title">
-                                             <a href="#" class="text-dark fw-500">
-                                                <h6>Jack Kalis</h6>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          South Korea
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Smart Collection
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          UX/UI Designer
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          June 20, 2020
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content d-inline-block">
-                                          <span
-                                             class="bg-opacity-success  color-success userDatatable-content-status active">open</span>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                          <li>
-                                             <a href="#" class="view">
-                                                <i class="uil uil-setting"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="edit">
-                                                <i class="uil uil-edit"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="remove">
-                                                <i class="uil uil-trash-alt"></i>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </td>
-                                 </tr>
-
-
-                                 <tr>
-                                    <td>#05</td>
-                                    <td>
-                                       <div class="d-flex">
-                                          <div class="userDatatable-inline-title">
-                                             <a href="#" class="text-dark fw-500">
-                                                <h6>Black Smith</h6>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          United Kingdom
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Print Media
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          Graphic Designer
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          August 20, 2020
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content d-inline-block">
-                                          <span
-                                             class="bg-opacity-success  color-success userDatatable-content-status active">open</span>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                          <li>
-                                             <a href="#" class="view">
-                                                <i class="uil uil-setting"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="edit">
-                                                <i class="uil uil-edit"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="remove">
-                                                <i class="uil uil-trash-alt"></i>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </td>
-                                 </tr>
-
-
-                                 <tr>
-                                    <td>#06</td>
-                                    <td>
-                                       <div class="d-flex">
-                                          <div class="userDatatable-inline-title">
-                                             <a href="#" class="text-dark fw-500">
-                                                <h6>Aftab Ahmed</h6>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Bangladesh
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Online Super Shop
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          Marketer
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          January 15, 2021
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content d-inline-block">
-                                          <span
-                                             class="bg-opacity-success  color-success userDatatable-content-status active">open</span>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                          <li>
-                                             <a href="#" class="view">
-                                                <i class="uil uil-setting"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="edit">
-                                                <i class="uil uil-edit"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="remove">
-                                                <i class="uil uil-trash-alt"></i>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </td>
-                                 </tr>
-
-
-                                 <tr>
-                                    <td>#07</td>
-                                    <td>
-                                       <div class="d-flex">
-                                          <div class="userDatatable-inline-title">
-                                             <a href="#" class="text-dark fw-500">
-                                                <h6>Daniel White</h6>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Australia
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Business Development
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          Project Manager
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          January 20, 2021
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content d-inline-block">
-                                          <span
-                                             class="bg-opacity-success  color-success userDatatable-content-status active">open</span>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                          <li>
-                                             <a href="#" class="view">
-                                                <i class="uil uil-setting"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="edit">
-                                                <i class="uil uil-edit"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="remove">
-                                                <i class="uil uil-trash-alt"></i>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </td>
-                                 </tr>
-
-
-                                 <tr>
-                                    <td>#08</td>
-                                    <td>
-                                       <div class="d-flex">
-                                          <div class="userDatatable-inline-title">
-                                             <a href="#" class="text-dark fw-500">
-                                                <h6>Black Smith</h6>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          United Kingdom
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Print Media
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          Graphic Designer
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          August 20, 2020
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content d-inline-block">
-                                          <span
-                                             class="bg-opacity-success  color-success userDatatable-content-status active">open</span>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                          <li>
-                                             <a href="#" class="view">
-                                                <i class="uil uil-setting"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="edit">
-                                                <i class="uil uil-edit"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="remove">
-                                                <i class="uil uil-trash-alt"></i>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </td>
-                                 </tr>
-
-
-                                 <tr>
-                                    <td>#09</td>
-                                    <td>
-                                       <div class="d-flex">
-                                          <div class="userDatatable-inline-title">
-                                             <a href="#" class="text-dark fw-500">
-                                                <h6>Aftab Ahmed</h6>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Bangladesh
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Online Super Shop
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          Marketer
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          January 15, 2021
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content d-inline-block">
-                                          <span
-                                             class="bg-opacity-success  color-success userDatatable-content-status active">open</span>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                          <li>
-                                             <a href="#" class="view">
-                                                <i class="uil uil-setting"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="edit">
-                                                <i class="uil uil-edit"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="remove">
-                                                <i class="uil uil-trash-alt"></i>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </td>
-                                 </tr>
-
-
-                                 <tr>
-                                    <td>#10</td>
-                                    <td>
-                                       <div class="d-flex">
-                                          <div class="userDatatable-inline-title">
-                                             <a href="#" class="text-dark fw-500">
-                                                <h6>Daniel White</h6>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Australia
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--subject">
-                                          Business Development
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          Project Manager
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content--priority">
-                                          January 20, 2021
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <div class="userDatatable-content d-inline-block">
-                                          <span
-                                             class="bg-opacity-success  color-success userDatatable-content-status active">open</span>
-                                       </div>
-                                    </td>
-                                    <td>
-                                       <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                          <li>
-                                             <a href="#" class="view">
-                                                <i class="uil uil-setting"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="edit">
-                                                <i class="uil uil-edit"></i>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a href="#" class="remove">
-                                                <i class="uil uil-trash-alt"></i>
-                                             </a>
-                                          </li>
-                                       </ul>
-                                    </td>
-                                 </tr>
 
                               </tbody>
                            </table>
